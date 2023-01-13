@@ -32,20 +32,20 @@ button{
     background-image: url("./images/crash.png");
 }
 .btn2{
-    background-image: url("./images/kick.png");
+    background-image: url("./images/tom2.png");
 }
 .btn3{
-    background-image: url("./images/snare.png");
+    background-image: url("./images/tom4.png");
 }
 .btn4{
     background-image: url("./images/tom1.png");
 }
 .btn5{
-    background-image: url("./images/tom2.png");
+    background-image: url("./images/snare.png");
 }
 .btn6{
-    background-image: url("./images/tom3.png");
+    background-image: url("./images/tom4.png");
 }
-.btn1{
-    background-image: url("./images/crash.png");
+.btn7{
+    background-image: url("./images/kick.png");
 }

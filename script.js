@@ -1,16 +1,23 @@
-var imgArray = [];
-imgArray[0] = "./images/crash.png";
-imgArray[1] = "./images/kick.png";
-imgArray[2] = "./images/snare.png";
-imgArray[3] = "./images/snare.png";
-imgArray[5] = "./images/tom1.png";
-imgArray[6] = "./images/tom2.png";
-imgArray[7] = "./images/tom3.png";
 
-var buttons = document.getElementsByTagName("button");
-console.log(buttons[0]);
+function playAudio(url) {
+    console.log("played");
+    new Audio(url).play();
+  }
 
-
-for(let i = 0;i < imgArray.length;i++){
-    buttons[i].style.background =  imgArray[i];
-}
+  document.addEventListener("keypress",(k)=>{
+    if(k.key == "w"){
+        playAudio('./sounds/crash.mp3');
+    }else if(k.key == 'a'){
+        playAudio('./sounds/buzz.mp3');
+    }else if(k.key == 's'){
+        playAudio('./sounds/buzzer.mp3');
+    }else if(k.key == 'd'){
+        playAudio('./sounds/crock.mp3');
+    }else if(k.key == 'j'){
+        playAudio('./sounds/snare.mp3');
+    }else if(k.key == 'k'){
+        playAudio('./sounds/buzzer.mp3');
+    }else if(k.key == 'l'){
+        playAudio('./sounds/kick-bass.mp3');
+    }
+  })
